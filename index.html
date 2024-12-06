@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorteo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="./assets/GYPAGRO_BLACK.png" alt="Logo GYP" class="header-img">
+  </header>
+
+  <main>
+    <h2>SORTEO</h2>
+    <div class="inputs-container">
+      <input type="text" id="nombre" placeholder="Nombre razón social" />
+      <input type="number" id="numero" placeholder="Número de invitación" />
+      <button onclick="agregarParticipante()">Agregar Participante</button>
+    </div>
+    
+    <button onclick="sortear()">Sortear</button>
+
+    <p id="resultado" class="resultado"></p>
+    
+    <p id="restantes" class="peque"></p>
+  </main>
+
+  <footer>
+    <p>&copy;</p>
+    <img src="./assets/logoOscuro.svg" alt="Logo Tomi" class="footer-img">
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>

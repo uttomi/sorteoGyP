@@ -1,0 +1,138 @@
+:root {
+    --color-back: #f9f9f9; 
+    --color-primario: #a9eeff; 
+    --color-secundario: #023379; 
+    --color-btn: #006cff; 
+    --color-texto: #333333; 
+    --color-placeholder: #888888; 
+    --fuente: 'Roboto', Arial, sans-serif; 
+    --sombra: rgba(0, 0, 0, 0.1); 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuente);
+    background-color: var(--color-back);
+    color: var(--color-texto);
+    text-align: center;
+}
+
+header, footer {
+    background-color: var(--color-primario);
+    color: white;
+    padding: 15px;
+    box-shadow: 0 4px 6px var(--sombra);
+}
+
+header img {
+    width: 150px;
+    height: auto;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: var(--color-texto);
+}
+
+footer img {
+    width: 40px;
+    margin-top: 5px;
+}
+
+main {
+    padding: 20px;
+    max-width: 600px;
+    min-height: 70vh;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: var(--color-secundario);
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 1.2rem;
+    color: var(--color-texto);
+    margin-bottom: 30px;
+}
+
+.inputs-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px var(--sombra);
+    margin-bottom: 20px;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px auto;
+    font-size: 16px;
+    border: 1px solid var(--color-secundario);
+    border-radius: 5px;
+    outline: none;
+    font-family: var(--fuente);
+    color: var(--color-texto);
+    background-color: #ffffff;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+input::placeholder {
+    color: var(--color-placeholder);
+}
+
+input:focus {
+    border-color: var(--color-btn);
+    box-shadow: 0 0 5px var(--color-btn);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--color-btn);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 6px var(--sombra);
+    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: var(--color-secundario);
+    box-shadow: 0 6px 10px var(--sombra);
+}
+
+button:active {
+    transform: scale(1);
+}
+
+.sortear-btn {
+    margin-top: 20px;
+}
+
+.resultado {
+    padding-top: 30px;
+    font-size: 1.2rem;
+    color: var(--color-secundario);
+    font-weight: bold;
+}
+
+.peque {
+    font-size: 0.9rem;
+    color: gray;
+    margin-top: 10px;
+}
