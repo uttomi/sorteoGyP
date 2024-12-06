@@ -1,6 +1,6 @@
 :root {
     --color-back: #f9f9f9; 
-    --color-primario: #a9eeff; 
+    --color-primario: #b5cef5; 
     --color-secundario: #023379; 
     --color-btn: #006cff; 
     --color-texto: #333333; 
@@ -44,14 +44,14 @@ footer {
 }
 
 footer img {
-    width: 40px;
+    width: 60px;
     margin-top: 5px;
 }
 
 main {
     padding: 20px;
     max-width: 600px;
-    min-height: 70vh;
+    min-height: 80vh;
     margin: 0 auto;
 }
 
@@ -126,7 +126,7 @@ button:active {
 
 .resultado {
     padding-top: 30px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: var(--color-secundario);
     font-weight: bold;
 }
